@@ -51,14 +51,16 @@ public class Names {
 			.sorted()
 			.forEach(s->System.out.println(s));
 		
-		//collect into a list
+
 		
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 1, 2, 3, 22, 11, 4, 5, 6, 6, 7);
+		
 		//sort the array
 		List<Integer> sorted = numbers.stream()
 			.sorted()
 			.collect(Collectors.toList());
 		System.out.println(sorted);
+		
 		//print unique numbers
 		Set<Integer> unique = numbers.stream()
 									.collect(Collectors.toSet());
